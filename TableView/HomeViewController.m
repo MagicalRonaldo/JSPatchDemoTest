@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *sectionArray;
 @property (nonatomic, strong) NSArray *cellTitleArray;
+@property (nonatomic, strong) NSArray *paramArray;
 
 @end
 
@@ -35,17 +36,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"作业本";
+    
+//    if (self.vcTitle && self.vcTitle.length > 0) {
+//        self.navigationItem.title = self.vcTitle;
+//    } else {
+        self.navigationItem.title = @"作业本";
+//    }
     self.sectionArray = @[@5];
     self.cellTitleArray = @[@[@"第1次随堂", @"第2次随堂", @"第3次随堂", @"第4次随堂", @"第5次随堂"]];
+    
+    self.paramArray = @[@"第1次随堂", @"第2次随堂", @"第3次随堂", @"第4次随堂"];
+    
     [self.view addSubview:self.tableView];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 #pragma mark - delegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
- 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return self.sectionArray.count;
 }
 
@@ -90,29 +99,24 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-//    if (indexPath.row % 2 == 0) {
-//        cell.backgroundColor = [UIColor redColor];
-//    } else {
-//        cell.backgroundColor = [UIColor blueColor];
-//    }
-}
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+////    if (indexPath.row % 2 == 0) {
+////        cell.backgroundColor = [UIColor redColor];
+////    } else {
+////        cell.backgroundColor = [UIColor blueColor];
+////    }
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    switch (indexPath.row) {
-        case 0:
-        {
-            FirstWeekViewController *firstWeekVC = [[FirstWeekViewController alloc] init];
-            [self.navigationController pushViewController:firstWeekVC animated:YES];
-            break;
-        }
-            
-        default:
-            break;
-    }
+    
+    FirstWeekViewController *firstWeekVC = [[FirstWeekViewController alloc] init];
+//    firstWeekVC.vcTitle = self.paramArray[indexPath.row];
+    
+    [firstWeekVC setTitle:self.paramArray[indexPath.row]];
+    [self.navigationController pushViewController:firstWeekVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

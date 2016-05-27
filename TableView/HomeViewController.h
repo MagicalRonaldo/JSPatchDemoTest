@@ -10,4 +10,6 @@
 
 @interface HomeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+//@property (nonatomic, strong) NSString *vcTitle;
+
 @end

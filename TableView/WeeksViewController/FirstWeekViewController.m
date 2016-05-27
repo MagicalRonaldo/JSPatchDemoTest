@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"第一周";
     // Do any additional setup after loading the view.
 }
 

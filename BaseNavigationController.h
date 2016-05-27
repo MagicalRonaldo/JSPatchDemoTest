@@ -10,4 +10,6 @@
 
 @interface BaseNavigationController : UINavigationController
 
+- (void)pushViewController:(UIViewController *)vc;
+
 @end
