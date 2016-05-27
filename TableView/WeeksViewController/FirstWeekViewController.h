@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 xubing. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FirstWeekViewController : UIViewController
+@interface FirstWeekViewController : BaseViewController
 
 @end

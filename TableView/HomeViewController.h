@@ -6,10 +6,8 @@
 //  Copyright (c) 2013年 xubing. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface HomeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
-//@property (nonatomic, strong) NSString *vcTitle;
+@interface HomeViewController : BaseViewController
 
 @end

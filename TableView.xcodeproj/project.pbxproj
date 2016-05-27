@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2775CB551CF7D8E200CC0E92 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2775CB541CF7D8E200CC0E92 /* demo.js */; };
+		2775CB581CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2775CB571CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.m */; };
+		2775CB5B1CF7EB3800CC0E92 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2775CB5A1CF7EB3800CC0E92 /* BaseViewController.m */; };
+		2775CB5D1CF7EEFD00CC0E92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2775CB5C1CF7EEFD00CC0E92 /* Images.xcassets */; };
 		27BDE0A51AB9B97600DBF0DA /* FirstWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BDE0A41AB9B97600DBF0DA /* FirstWeekViewController.m */; };
 		27BDE0A81AB9BC2700DBF0DA /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BDE0A71AB9BC2700DBF0DA /* BaseNavigationController.m */; };
 		492CC92819405F920026422A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492CC92719405F910026422A /* Foundation.framework */; };
@@ -39,6 +42,11 @@
 
 /* Begin PBXFileReference section */
 		2775CB541CF7D8E200CC0E92 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = demo.js; path = ../../demo.js; sourceTree = "<group>"; };
+		2775CB561CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+NavItem.h"; sourceTree = "<group>"; };
+		2775CB571CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+NavItem.m"; sourceTree = "<group>"; };
+		2775CB591CF7EB3800CC0E92 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2775CB5A1CF7EB3800CC0E92 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2775CB5C1CF7EEFD00CC0E92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27BDE0A31AB9B97600DBF0DA /* FirstWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstWeekViewController.h; path = TableView/WeeksViewController/FirstWeekViewController.h; sourceTree = "<group>"; };
 		27BDE0A41AB9B97600DBF0DA /* FirstWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstWeekViewController.m; path = TableView/WeeksViewController/FirstWeekViewController.m; sourceTree = "<group>"; };
 		27BDE0A61AB9BC2700DBF0DA /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -105,6 +113,11 @@
 		492CC91B19405F910026422A = {
 			isa = PBXGroup;
 			children = (
+				2775CB5C1CF7EEFD00CC0E92 /* Images.xcassets */,
+				2775CB591CF7EB3800CC0E92 /* BaseViewController.h */,
+				2775CB5A1CF7EB3800CC0E92 /* BaseViewController.m */,
+				2775CB561CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.h */,
+				2775CB571CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.m */,
 				2775CB541CF7D8E200CC0E92 /* demo.js */,
 				492CC93619405F920026422A /* AppDelegate.h */,
 				492CC93719405F920026422A /* AppDelegate.m */,
@@ -270,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2775CB551CF7D8E200CC0E92 /* demo.js in Resources */,
+				2775CB5D1CF7EEFD00CC0E92 /* Images.xcassets in Resources */,
 				492CC93219405F920026422A /* InfoPlist.strings in Resources */,
 				492CC93A19405F920026422A /* Images.xcassets in Resources */,
 			);
@@ -340,7 +354,9 @@
 			files = (
 				492CC93819405F920026422A /* AppDelegate.m in Sources */,
 				492CC93419405F920026422A /* main.m in Sources */,
+				2775CB581CF7EAE500CC0E92 /* UIBarButtonItem+NavItem.m in Sources */,
 				492CC95A194060040026422A /* ListTableViewCell.m in Sources */,
+				2775CB5B1CF7EB3800CC0E92 /* BaseViewController.m in Sources */,
 				27BDE0A81AB9BC2700DBF0DA /* BaseNavigationController.m in Sources */,
 				492CC95B194060040026422A /* HomeViewController.m in Sources */,
 				27BDE0A51AB9B97600DBF0DA /* FirstWeekViewController.m in Sources */,

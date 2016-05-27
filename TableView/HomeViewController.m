@@ -10,7 +10,7 @@
 #import "ListTableViewCell.h"
 #import "FirstWeekViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *sectionArray;
@@ -113,8 +113,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     FirstWeekViewController *firstWeekVC = [[FirstWeekViewController alloc] init];
-//    firstWeekVC.vcTitle = self.paramArray[indexPath.row];
-    
     [firstWeekVC setTitle:self.paramArray[indexPath.row]];
     [self.navigationController pushViewController:firstWeekVC animated:YES];
 }
